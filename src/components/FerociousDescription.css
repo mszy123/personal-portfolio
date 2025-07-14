@@ -1,0 +1,216 @@
+.ferocious-description {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.ferocious-timeline {
+  padding: 0 !important;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.ferocious-timeline-item {
+  min-height: auto !important;
+  padding: 0 0 2rem 0 !important;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.ferocious-timeline-item::before {
+  display: none !important;
+}
+
+.ferocious-timeline-item:last-child {
+  padding-bottom: 0 !important;
+}
+
+.ferocious-timeline-dot {
+  background: #ffffff !important; /* White */
+  border: 4px solid #ffffff !important;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3) !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.ferocious-timeline-dot:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4) !important;
+}
+
+.ferocious-position-icon {
+  font-size: 1.8rem !important;
+  color: white !important;
+}
+
+.ferocious-timeline-connector {
+  background: linear-gradient(180deg, #7c3aed, #a78bfa) !important;
+  width: 3px !important;
+  margin: 0 auto !important;
+}
+
+.ferocious-timeline-content {
+  padding: 0 0 0 2rem !important;
+  margin: 0 !important;
+}
+
+.ferocious-position-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.08);
+  border: 1px solid rgba(124, 58, 237, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInSlide 0.6s ease-out;
+  animation-fill-mode: both;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.ferocious-position-card:nth-child(1) { animation-delay: 0.1s; }
+.ferocious-position-card:nth-child(2) { animation-delay: 0.2s; }
+
+.ferocious-position-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(124, 58, 237, 0.15);
+}
+
+.ferocious-position-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #174EA6;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.ferocious-position-date {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #174EA6;
+  margin: 0 0 1rem 0;
+  padding: 0.25rem 1rem;
+  background: #e3f2fd;
+  border-radius: 16px;
+  display: inline-block;
+  letter-spacing: 0.02em;
+  box-shadow: 0 1px 4px rgba(23, 78, 166, 0.08);
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ferocious-position-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.ferocious-dot-border {
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.ferocious-dot-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ferocious-timeline-content {
+    padding: 0 0 0 1.5rem !important;
+  }
+  
+  .ferocious-position-card {
+    padding: 1.5rem;
+  }
+  
+  .ferocious-timeline-dot {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  .ferocious-position-icon {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ferocious-description {
+    padding: 1rem 0;
+  }
+  
+  .ferocious-timeline-content {
+    padding: 0 0 0 1rem !important;
+  }
+  
+  .ferocious-position-card {
+    padding: 1.2rem;
+  }
+  
+  .ferocious-position-title {
+    font-size: 1.1rem;
+  }
+  
+  .ferocious-position-description {
+    font-size: 0.95rem;
+  }
+  
+  .ferocious-timeline-dot {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  
+  .ferocious-position-icon {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .ferocious-timeline-content {
+    padding: 0 0 0 0.8rem !important;
+  }
+  
+  .ferocious-position-card {
+    padding: 1rem;
+  }
+  
+  .ferocious-position-title {
+    font-size: 1rem;
+  }
+  
+  .ferocious-position-description {
+    font-size: 0.9rem;
+  }
+  
+  .ferocious-timeline-dot {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  
+  .ferocious-position-icon {
+    font-size: 1.1rem !important;
+  }
+}

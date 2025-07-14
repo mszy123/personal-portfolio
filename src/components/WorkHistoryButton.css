@@ -1,0 +1,58 @@
+.work-history-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F9F9F9;
+  border: 1.5px solid transparent;
+  border-radius: 2.5rem;
+  padding: 10px 0;
+  width: 200px;
+  height: 80px;
+  min-width: 200px;
+  min-height: 60px;
+  box-shadow: none;
+  cursor: pointer;
+  transition: border 0.6s, background 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.work-history-btn:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.work-history-btn:hover {
+    outline: none;
+    border-color: transparent;
+  }
+
+.work-history-btn.selected,
+.work-history-btn:active {
+  background: #F9F9F9;
+  border-color: #1967d2;
+  box-shadow: 0 2px 8px rgba(25, 103, 210, 0.08);
+}
+  
+
+.work-history-btn-logo {
+  max-width: 60%;
+  max-height: 60%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  transition: filter 0.5s;
+}
+
+.work-history-btn:hover .work-history-btn-logo:not(:only-child),
+.work-history-btn:hover .work-history-btn-logo {
+  filter: none !important;
+}
+
+@media (max-width: 600px) {
+  .work-history-btn-logo {
+    max-width: 60%;
+    max-height: 60%;
+  }
+} 
